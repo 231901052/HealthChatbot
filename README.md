@@ -33,19 +33,24 @@ healthbot/
 └── README.md
 ```
 ## 🛠️ Tech Stack
-Component,Technology
-Language,Python 3.9+
-Web Framework,Flask
-NLP Engine,Rasa
-Messaging API,Twilio WhatsApp API
-Containerization,Docker & Docker Compose
+```
+Component        |    Technology         |       Description
+-----------------|-----------------------|-----------------------------------------------------
+Language         |   Python 3.9+         |     Primary programming language
+Web Framework    |   Flask               |     Handles routing and dashboard logic
+NLP Engine       |   Rasa                |     Processes natural language and intents
+Messaging API    |   Twilio              |     Integrates with WhatsApp Business API
+Containerization |  Docker               |    Ensures consistent environments across services
+Orchestration    |   Docker Compose      |     Manages multi-container deployment
+
+```
 
 ## ⚙️ How It Works
-User Interaction: The user sends a message via WhatsApp.
-Processing: Twilio forwards the message to the Flask backend.
-Intelligence: The backend queries the Rasa service to understand user intent.
-Escalation: If the NLP detects a serious symptom (e.g., "High Fever," "Chest Pain"), the backend pushes a notification to the ASHA Dashboard.
-Response: The user receives an automated response while the health worker is alerted for follow-up.
+* User Interaction: The user sends a message via WhatsApp.
+* Processing: Twilio forwards the message to the Flask backend.
+* Intelligence: The backend queries the Rasa service to understand user intent.
+* Escalation: If the NLP detects a serious symptom (e.g., "High Fever," "Chest Pain"), the backend pushes a notification to the ASHA Dashboard.
+* Response: The user receives an automated response while the health worker is alerted for follow-up.
 
 ## 🐳 Running the Project (Docker Recommended)
 ## Step 1 – Clone Repository
