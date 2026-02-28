@@ -40,7 +40,7 @@ Language         |   Python 3.9+         |     Primary programming language
 Web Framework    |   Flask               |     Handles routing and dashboard logic
 NLP Engine       |   Rasa                |     Processes natural language and intents
 Messaging API    |   Twilio              |     Integrates with WhatsApp Business API
-Containerization |  Docker               |    Ensures consistent environments across services
+Containerization |   Docker              |     Ensures consistent environments across services
 Orchestration    |   Docker Compose      |     Manages multi-container deployment
 
 ```
