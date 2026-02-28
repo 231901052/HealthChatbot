@@ -53,7 +53,7 @@ Orchestration    |   Docker Compose      |     Manages multi-container deploymen
 * Response: The user receives an automated response while the health worker is alerted for follow-up.
 
 ## 🐳 Running the Project (Docker Recommended)
-## Step 1 – Clone Repository
+# Step 1 – Clone Repository
 Bash
 * git clone [https://github.com/231901052/HealthChatbot.git](https://github.com/231901052/HealthChatbot.git)
 * cd healthbot
@@ -67,7 +67,7 @@ TWILIO_WHATSAPP_NUMBER=your_twilio_number
 * Execute the following command to start all services:
 Bash
 * python3 runme.py
-# Alternatively: docker-compose up --build
+* Alternatively: docker-compose up --build
 ## Step 4 – Access Services
 Flask Backend: http://localhost:5000
 ASHA Dashboard: http://localhost:5001
