@@ -1,0 +1,68 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: healthbot
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  rasa:
+    image: rasa/rasa:3.5.17
+    platform: linux/amd64
+    volumes:
+      - ./rasa_project:/app
+    command: >
+      run --enable-api --cors "*" --debug --model /app/models/20250919-011432-bone-parkway.tar.gz
+
+    ports:
+      - "5005:5005"
+    depends_on:
+      - redis
+      - postgres
+
+
+  ngrok:
+    image: ngrok/ngrok:3
+    container_name: ngrok
+    depends_on:
+      - backend
+    environment:
+      - NGROK_AUTHTOKEN=32mIoN4k7NRlUfMidHZHqeDsxn6_3G2wvBtruraSHFXqzH6AK
+    command: http backend:8000
+    ports:
+      - "4040:4040"
+
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - redis
+      - rasa
+
+  asha_dashboard:
+    build: ./asha_dashboard
+    volumes:
+      - ./asha_dashboard:/app
+    ports:
+      - "5001:5001"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

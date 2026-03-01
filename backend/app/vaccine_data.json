@@ -1,0 +1,148 @@
+{
+  "pregnant_women_vaccines": [
+    {
+      "vaccine": "TT-1",
+      "when": "Early in pregnancy",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Upper Arm"
+    },
+    {
+      "vaccine": "TT-2",
+      "when": "4 weeks after TT-1",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Upper Arm"
+    },
+    {
+      "vaccine": "TT-Booster",
+      "when": "If received 2 TT doses in a pregnancy within the last 3 years",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Upper Arm"
+    }
+  ],
+  "infant_vaccines": [
+    {
+      "vaccine": "BCG",
+      "when": "At birth or as early as possible till one year of age",
+      "dose": "0.1 ml (0.05 ml until 1 month age)",
+      "route": "Intra-dermal",
+      "site": "Left Upper Arm"
+    },
+    {
+      "vaccine": "Hepatitis B - Birth dose",
+      "when": "At birth or as early as possible within 24 hours",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Antero-lateral side of mid-thigh"
+    },
+    {
+      "vaccine": "OPV-0",
+      "when": "At birth or as early as possible within the first 15 days",
+      "dose": "2 drops",
+      "route": "Oral",
+      "site": "Oral"
+    },
+    {
+      "vaccine": "OPV 1, 2 & 3",
+      "when": "At 6 weeks, 10 weeks & 14 weeks (can be given till 5 years of age)",
+      "dose": "2 drops",
+      "route": "Oral",
+      "site": "Oral"
+    },
+    {
+      "vaccine": "Pentavalent 1, 2 & 3",
+      "when": "At 6 weeks, 10 weeks & 14 weeks (can be given till one year of age)",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Antero-lateral side of mid-thigh"
+    },
+    {
+      "vaccine": "Rotavirus",
+      "when": "At 6 weeks, 10 weeks & 14 weeks (can be given till one year of age)",
+      "dose": "5 drops",
+      "route": "Oral",
+      "site": "Oral"
+    },
+    {
+      "vaccine": "IPV (two fractional doses)",
+      "when": "At 6 weeks and 14 weeks of age",
+      "dose": "0.1 ml",
+      "route": "Intra-dermal (two fractional doses)",
+      "site": "Right upper arm"
+    },
+    {
+      "vaccine": "Measles / MR 1st Dose",
+      "when": "At 9 completed months - 12 months (can be given till 5 years of age)",
+      "dose": "0.5 ml",
+      "route": "Sub-cutaneous",
+      "site": "Right upper Arm"
+    },
+    {
+      "vaccine": "JE-1",
+      "when": "At 9 completed months - 12 months",
+      "dose": "0.5 ml",
+      "route": "Sub-cutaneous",
+      "site": "Left upper Arm"
+    },
+    {
+      "vaccine": "Vitamin A (1st dose)",
+      "when": "At 9 completed months with Measles-Rubella",
+      "dose": "1 ml (1 lakh IU)",
+      "route": "Oral",
+      "site": "Oral"
+    }
+  ],
+  "children_vaccines": [
+    {
+      "vaccine": "DPT Booster-1",
+      "when": "16-24 months",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Antero-lateral side of mid-thigh"
+    },
+    {
+      "vaccine": "Measles / MR 2nd dose",
+      "when": "16-24 months",
+      "dose": "0.5 ml",
+      "route": "Sub-cutaneous",
+      "site": "Right upper Arm"
+    },
+    {
+      "vaccine": "OPV Booster",
+      "when": "16-24 months",
+      "dose": "2 drops",
+      "route": "Oral",
+      "site": "Oral"
+    },
+    {
+      "vaccine": "JE-2",
+      "when": "16-24 months",
+      "dose": "0.5 ml",
+      "route": "Sub-cutaneous",
+      "site": "Left Upper Arm"
+    },
+    {
+      "vaccine": "Vitamin A (2nd to 9th dose)",
+      "when": "16-18 months, then one dose every 6 months up to 5 years",
+      "dose": "2 ml (2 lakh IU)",
+      "route": "Oral",
+      "site": "Oral"
+    },
+    {
+      "vaccine": "DPT Booster-2",
+      "when": "5-6 years",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Upper Arm"
+    },
+    {
+      "vaccine": "TT",
+      "when": "10 years & 16 years",
+      "dose": "0.5 ml",
+      "route": "Intra-muscular",
+      "site": "Upper Arm"
+    }
+  ]
+}

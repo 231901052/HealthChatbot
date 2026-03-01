@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+psycopg2-binary
+python-dotenv
+twilio
+requests
+redis
+celery[redis]
+langdetect
+googletrans==4.0.0-rc1   # optional; for dev translations. For prod use paid translation API
+pydantic
+python-multipart
+google-generativeai
+openai-whisper

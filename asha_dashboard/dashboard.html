@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHA Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #d9534f; text-align: center; }
+        .alert-card { border: 1px solid #d9534f; background-color: #f9e6e6; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+        .alert-card strong { color: #d9534f; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Critical Health Alerts</h1>
+        {% if alerts %}
+            {% for alert in alerts %}
+                <div class="alert-card">
+                    <p><strong>Phone:</strong> {{ alert.phone }}</p>
+                    <p><strong>Message:</strong> {{ alert.message }}</p>
+                    <p><strong>Status:</strong> {{ alert.status }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p style="text-align: center;">No critical alerts at this time.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
